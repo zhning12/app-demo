@@ -1,0 +1,44 @@
+<html ng-app='app'>
+
+<head>
+    
+    <script type='text/javascript' src="bower_components/angular/angular.min.js"></script>
+    <script type='text/javascript' src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+    <script type='text/javascript' src="app.js"></script>
+    <link href="app.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div ng-controller="scrollContrl" class="container">
+        <div class="nav">
+            <ul>
+                <li ng-repeat="list in todoList" >
+                    <a href="#{{list}}" 
+                    du-smooth-scroll 
+                    duration='500'                    
+                    class="list"
+                    du-scrollspy='active'>{{list}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="body-container">
+            <div ng-repeat="list in todoList" id='{{list}}'>
+                <p>{{list}}</p>
+                <p>###########</p>
+                <p>###########</p>
+                <p>###########</p>
+                <p>###########</p>
+                <p>###########</p>
+                <p>###########</p>
+                <p>###########</p>
+                <p>###########</p>
+                <p>###########</p>
+                <p>###########</p>
+                <p>###########</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

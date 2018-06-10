@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.nav{
+    display: flex;
+    position: fixed;
+    left: 0;
+    width: 20%;
+    flex-direction: column;
+}
+.body-container{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+a.active{
+    font-size: 40px;
+    color: aquamarine;
+}
+.list{
+    color: blue;
+    text-decoration: none;
+}
